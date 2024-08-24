@@ -25,12 +25,7 @@ const PokemonCard = ({ name, image, speciesUrl, id, types }) => {
   const [description, setDescription] = useState('');
 
   const primaryType = types[0];
-  const backgroundColor = typeColors[primaryType] || '#eaedf1'; // Color por defecto si no se encuentra el tipo
-
-
-  // src/components/PokemonCard.js
-
-  
+  const backgroundColor = typeColors[primaryType] || '#eaedf1';
 
   useEffect(() => {
     const fetchDescription = async () => {
